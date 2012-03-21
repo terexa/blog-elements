@@ -34,5 +34,4 @@ end
       format.js #added
     end
   end
-  
 end
