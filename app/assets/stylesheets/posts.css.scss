@@ -7,19 +7,31 @@ html, body {
   font-size: 12px;
 }
 
-#page {
-background-color: #FAF9F5;
+.page {
+background-color: rgba(250,250,250,.9);
     color: #666666;
     margin: 0 auto;
     min-height: 100%;
     padding: 20px;
+    width: 800px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.header {
+background-color: rgba(0, 0, 0, 0.898);
+    border-radius: 10px 10px 10px 10px;
+    color: #666666;
+    margin: 0 auto;
+    min-height: 100%;
+    padding: 60px 20px 10px;
+    text-align: right;
     width: 800px;
 }
  
 textarea {
   font-family: Arial;
   font-size: 12px;
-  width: 500px;
+  width: 100%;
   height: 100px;
   padding-bottom: 8px;
 }
