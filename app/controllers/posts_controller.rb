@@ -2,8 +2,7 @@ class PostsController < ApplicationController
 
 def index
   @posts = Post.all
-  @post = Post.new  # added
- 
+  @post = Post.new  
   respond_to do |format|
     format.html
   end
@@ -14,11 +13,11 @@ def create
  
   respond_to do |format|
     if @post.save
-  format.html { redirect_to posts_url, notice: 'Post was successfully created.' }
-  format.json { render json: @post, status: :created, location: @post }
-  format.js  #added
-else
-      format.html { render action: "index" } #changed
+      format.html { redirect_to posts_url, notice: 'Post was successfully created.' }
+      format.json { render json: @post, status: :created, location: @post }
+      format.js  
+    else           
+      format.html { redirect_to posts_url, notice: 'Something is wrong.' }
       format.json { render json: @post.errors, status: :unprocessable_entity }
     end
   end

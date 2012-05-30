@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.1'
 gem 'mysql2'
+gem 'newrelic_rpm'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
